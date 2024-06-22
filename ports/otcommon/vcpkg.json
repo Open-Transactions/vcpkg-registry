@@ -1,6 +1,6 @@
 {
     "name": "otcommon",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "port-version": 0,
     "description":
         "The otcommon package adds to the modules provided by CMake to perform common tasks and provide consistency by libopentxs and projects which use it.",
