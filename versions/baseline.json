@@ -2,7 +2,7 @@
     "default": {
         "boost-container": {
             "baseline": "1.85.0",
-            "port-version": 0
+            "port-version": 1
         },
         "opentxs": {
             "baseline": "1.189.1",
