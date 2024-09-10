@@ -1,0 +1,26 @@
+diff '--color=auto' -urN protobuf-4.25.1.orig/src/google/protobuf/port_def.inc protobuf-4.25.1/src/google/protobuf/port_def.inc
+--- protobuf-4.25.1.orig/src/google/protobuf/port_def.inc	2023-11-15 12:52:57.000000000 -0600
++++ protobuf-4.25.1/src/google/protobuf/port_def.inc	2024-09-10 09:42:57.853749425 -0500
+@@ -661,10 +661,10 @@
+ #error "endian detection failed for current compiler"
+ #endif
+ 
+-#ifdef PROTOBUF_CONSTINIT
+-#error PROTOBUF_CONSTINIT was previously defined
+-#endif
+-
++#if defined(PROTOBUF_CONSTINIT_WORKAROUND)
++#define PROTOBUF_CONSTINIT
++#define PROTOBUF_CONSTEXPR constexpr
++#else
+ // Lexan sets both MSV_VER and clang, so handle it with the clang path.
+ #if defined(_MSC_VER) && !defined(__clang__)
+ // MSVC 17 currently seems to raise an error about constant-initialized pointers.
+@@ -701,6 +701,7 @@
+ #define PROTOBUF_CONSTINIT
+ #define PROTOBUF_CONSTEXPR
+ #endif
++#endif
+ 
+ // Some globals with an empty non-trivial destructor are annotated with
+ // no_destroy for performance reasons. It reduces the cost of these globals in
