@@ -6,3 +6,6 @@ set(VCPKG_CMAKE_SYSTEM_NAME Darwin)
 set(VCPKG_OSX_ARCHITECTURES x86_64)
 
 set(CMAKE_OSX_DEPLOYMENT_TARGET 14)
+
+set(SDKROOT "$ENV{XCODE_ROOT}/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk")
+set(ENV{SDKROOT} "${SDKROOT}")
