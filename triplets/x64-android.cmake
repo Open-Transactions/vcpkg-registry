@@ -1,4 +1,10 @@
-set(ANDROID_PLATFORM "34")
+if(DEFINED ENV{OT_ANDROID_PLATFORM})
+  message(STATUS "using $ENV{OT_ANDROID_PLATFORM} for ANDROID_PLATFORM")
+  set(ANDROID_PLATFORM "$ENV{OT_ANDROID_PLATFORM}")
+else()
+  message(FATAL_ERROR "you must set OT_ANDROID_PLATFORM in the environment before using this triplet")
+endif()
+
 set(ANDROID_ABI "x86_64")
 set(ANDROID_STL "c++_shared")
 set(ANDROID_SDK_ROOT "$ENV{ANDROID_SDK_ROOT}")
