@@ -1,0 +1,38 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 03462271..e819d023 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2,9 +2,9 @@
+ project(ZeroMQ)
+ 
+ if(${CMAKE_SYSTEM_NAME} STREQUAL Darwin)
+-  cmake_minimum_required(VERSION 3.0.2)
++  cmake_minimum_required(VERSION 3.0.2...3.31)
+ else()
+-  cmake_minimum_required(VERSION 2.8.12)
++  cmake_minimum_required(VERSION 2.8.12...3.31)
+ endif()
+ 
+ include(CheckIncludeFiles)
+diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
+index d3422029..9bc6e767 100644
+--- a/tests/CMakeLists.txt
++++ b/tests/CMakeLists.txt
+@@ -1,5 +1,5 @@
+ # CMake build script for ZeroMQ tests
+-cmake_minimum_required(VERSION "2.8.1")
++cmake_minimum_required(VERSION 2.8.1...3.31)
+ 
+ # On Windows: solution file will be called tests.sln
+ project(tests)
+diff --git a/unittests/CMakeLists.txt b/unittests/CMakeLists.txt
+index 7132f00b..1ddeb983 100644
+--- a/unittests/CMakeLists.txt
++++ b/unittests/CMakeLists.txt
+@@ -1,5 +1,5 @@
+ # CMake build script for ZeroMQ unit tests
+-cmake_minimum_required(VERSION "2.8.1")
++cmake_minimum_required(VERSION 2.8.1...3.31)
+ 
+ set(unittests
+     unittest_ypipe
