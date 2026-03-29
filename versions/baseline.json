@@ -13,7 +13,7 @@
             "port-version": 103
         },
         "otcommon": {
-            "baseline": "3.2.0",
+            "baseline": "3.2.1",
             "port-version": 0
         },
         "protobuf": {
