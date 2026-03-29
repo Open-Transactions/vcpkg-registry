@@ -1,9 +1,5 @@
 {
     "default": {
-        "boost-container": {
-            "baseline": "1.85.0",
-            "port-version": 1
-        },
         "botan": {
             "baseline": "3.7.1",
             "port-version": 1
