@@ -46,6 +46,10 @@ if("amalgamation" IN_LIST FEATURES)
     vcpkg_list(APPEND configure_arguments --amalgamation)
 endif()
 
+if("boost" IN_LIST FEATURES)
+    vcpkg_list(APPEND configure_arguments --with-boost)
+endif()
+
 set(ZLIB_LIBS_RELEASE "")
 set(ZLIB_LIBS_DEBUG "")
 if("zlib" IN_LIST FEATURES)

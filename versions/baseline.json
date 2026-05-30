@@ -2,7 +2,7 @@
     "default": {
         "botan": {
             "baseline": "3.12.0",
-            "port-version": 0
+            "port-version": 1
         },
         "capnproto": {
             "baseline": "1.4.0",
