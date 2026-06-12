@@ -6,7 +6,7 @@
         },
         "capnproto": {
             "baseline": "1.4.0",
-            "port-version": 102
+            "port-version": 103
         },
         "opentxs": {
             "baseline": "1.189.1",
