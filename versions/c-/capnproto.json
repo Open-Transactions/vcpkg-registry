@@ -5,5 +5,10 @@
       "port-version": 101,
       "git-tree": "87655a444eeebcfa93db62e8ff35b512bd2a5ec3"
     }
+    {
+      "version": "1.4.0",
+      "port-version": 102,
+      "git-tree": "5093e6d4e7f703fe84b1c207c7f08d2eb23d961a"
+    }
   ]
 }
