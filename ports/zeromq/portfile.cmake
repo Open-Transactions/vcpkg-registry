@@ -31,6 +31,10 @@ vcpkg_find_acquire_program(PKGCONFIG)
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
     OPTIONS
+        # libzmq defaults to C++11. libc++ defines std::map comparator helpers
+        # differently below C++14, so mixing C++11 libzmq with C++14+ code
+        # that uses the same std::map instantiations is an ODR violation.
+        -DCMAKE_CXX_STANDARD=17
         -DZMQ_BUILD_TESTS=OFF
         -DBUILD_STATIC=${BUILD_STATIC}
         -DBUILD_SHARED=${BUILD_SHARED}
