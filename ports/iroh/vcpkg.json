@@ -1,0 +1,22 @@
+{
+    "name": "iroh",
+    "version": "0.101.0",
+    "port-version": 3,
+    "description": "C bindings for the Iroh IPFS/p2p protocol engine.",
+    "homepage": "https://github.com/n0-computer/iroh-c-ffi",
+    "license": "MIT OR Apache-2.0",
+    "dependencies": [
+        {
+            "name": "corrosion",
+            "host": true
+        },
+        {
+            "name": "vcpkg-cmake",
+            "host": true
+        },
+        {
+            "name": "vcpkg-cmake-config",
+            "host": true
+        }
+  ]
+}
