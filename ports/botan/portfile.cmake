@@ -2,7 +2,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO randombit/botan
     REF "${VERSION}"
-    SHA512 33a47e5733aedc29704652bf16704a2cd080cdcebd01c95879b5db3af3186debbef711c53ef131a9cb7defe3dd8ffae49d6efe7e75aef9107473b92dc6b3f101
+    SHA512 2a1410ed1f6072cbef402ca64ddd53bf8de822b5ef87a40159ab0891c2f6b7c39ac39318018ae3bda5bb4c4437480bad5c28596ea9121af7274a27e1ac2a08e8
     HEAD_REF master
     PATCHES
         verbose-install.patch
